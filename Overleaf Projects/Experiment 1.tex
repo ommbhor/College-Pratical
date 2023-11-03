@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage{listings}
+
+\title{Report on JavaScript User-Defined Functions}
+\author{Om Bhor, Aditya Kalokhe}
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\textit{JavaScript} is a popular programming language used for creating dynamic and interactive web pages. One of the key features of JavaScript is the ability to define and use user-defined functions. In this report, we will explore the concept of user-defined functions in JavaScript and provide examples to illustrate their usage.
+
+\section{User-Defined Functions}
+In JavaScript, a user-defined function is a block of code that performs a specific task and can be reused throughout a program. User-defined functions are created using the \textit{function} keyword, followed by the function name and a pair of parentheses. The code block that makes up the function is enclosed in curly braces.
+
+\begin{lstlisting}
+// Example of a user-defined function
+function greet() {
+    console.log("Hello, world!");
+}
+\end{lstlisting}
+
+The above code snippet demonstrates the definition of a simple user-defined function called greet. This function does not take any parameters and simply logs the message "Hello, world!" to the console.
+\section{Function Parameters}
+
+User-defined functions can also accept parameters, which are variables that hold values passed to the function when it is called. Parameters allow functions to perform tasks with different input values.
+
+\begin{lstlisting}
+// Example of a user-defined function with parameters
+function addNumbers(a, b) {
+    return a + b;
+}
+\end{lstlisting}
+
+In the example above, the \textbf{addNumbers function} takes two parameters, a and b, and returns their sum. The function can be called with different values for a and b to perform addition with different numbers.
+
+\section{Function Invocation}
+To execute a user-defined function, it needs to be invoked or called. Function invocation is done by using the function name followed by a pair of parentheses. If the function has parameters, the values to be passed to the function are provided within the parentheses.
+
+\begin{lstlisting}
+// Example of function invocation
+greet(); // Outputs "Hello, world!"
+
+var result = addNumbers(3, 5);
+console.log(result); // Outputs 8
+\end{lstlisting}
+
+In the code snippet above, the \textbf{greet function} is invoked without any parameters, resulting in the message "Hello, world!" being logged to the console. The addNumbers function is invoked with the arguments 3 and 5, and the returned sum is stored in the result variable and logged to the console.
+
+\section{Conclusion}
+
+User-defined functions are an essential part of JavaScript programming. They allow developers to encapsulate logic into reusable blocks of code, making programs more modular and easier to maintain. By understanding the concept of user-defined functions and how to use them, developers can leverage the power of JavaScript to create dynamic and interactive web applications.
+
+\end{document}

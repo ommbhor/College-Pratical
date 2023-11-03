@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{listings}
+
+\title{Report on JavaScript Validation on Object Functions}
+\author{Om Bhor, Aditya Kalokhe}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+JavaScript is a powerful programming language used for creating dynamic and interactive web pages. One of the key features of JavaScript is the ability to define and use object functions. In this report, we will explore the concept of object functions in JavaScript and discuss how to perform validation on them.
+
+\section{Object Functions}
+
+In JavaScript, an object function is a function that is defined as a \textbf{property of an object}. Object functions are used to perform specific tasks related to the object they belong to. They can access the object's properties and perform operations on them.
+
+\begin{lstlisting}
+// Example of an object with a function
+var person = {
+    name: "John",
+    age: 25,
+    greet: function() {
+        console.log("Hello, my name is " + this.name + " and I am " + this.age + " years old.");
+    }
+};
+\end{lstlisting}
+
+The above code snippet demonstrates the definition of an object called person with a function called \textbf{greet}. The \textbf{greet} function accesses the object's name and age properties and logs a greeting message to the console.
+
+\section{Validation on Object Functions}
+
+Validation is the process of checking whether a given input or condition is valid or meets certain criteria. In the context of object functions, validation can be used to ensure that the function is called with the correct arguments or that the object's properties have valid values.
+
+\begin{lstlisting}
+// Example of validation on an object function
+var person = {
+    name: "John",
+    age: 25,
+    greet: function() {
+        if (this.name && this.age) {
+            console.log("Hello, my name is " + this.name + " and I am " + this.age + " years old.");
+        } else {
+            console.log("Invalid object properties.");
+        }
+    }
+};
+\end{lstlisting}
+
+In the updated code snippet above, the greet function includes a validation check using an if statement. It checks if the name and age properties of the object are defined and not empty. If the validation passes, the greeting message is logged to the console. Otherwise, an "Invalid object properties" message is logged.
+
+\section{Conclusion}
+
+Validation on object functions is an important aspect of JavaScript programming. It ensures that the functions are called with the correct arguments and that the object's properties have valid values. By incorporating validation into object functions, developers can create more robust and reliable JavaScript code.
+
+\end{document}
